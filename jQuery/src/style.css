@@ -1,0 +1,37 @@
+
+body{
+    padding: 3em;
+}
+
+#display-container{
+    background-color: blueviolet;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 4em;
+    padding: 1em;
+}
+
+#display{
+    font-size: 2em
+}
+
+#button-container{
+    background-color: rgba(74, 74, 113, 0.614);
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0.3em;
+    justify-content: center;
+}
+.button, .func-button{
+    background-color: rgba(54, 54, 226, 0.662);
+    text-align: center;
+    padding: 2em;
+    max-width: 0.7em;
+}
+
+.no-button{
+    text-align: center;
+    padding: 2em;
+    max-width: 0.7em;
+}
