@@ -1,34 +1,40 @@
 
 body{
     padding: 3em;
+    font-family: 'Roboto',sans-serif;
 }
 
 #display-container{
-    background-color: blueviolet;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    height: 4em;
-    padding: 1em;
+    
 }
 
 #display{
-    font-size: 2em
+    border-style: solid;
+    text-align: center;
+    padding: 0.3em;
+    max-width: 20em;
+    margin: 0.8em auto 0.8em auto;
+    font-size: 3em
 }
 
 #button-container{
-    background-color: rgba(74, 74, 113, 0.614);
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 0.3em;
     justify-content: center;
 }
-.button, .func-button{
-    background-color: rgba(54, 54, 226, 0.662);
+.num-button, .func-button{
+    background-color: rgba(20, 80, 169, 0.662);
     text-align: center;
     padding: 2em;
     max-width: 0.7em;
-    border-radius: 0.8em;
+    border-radius: 0.1em;
+
+    padding: 1.5em;
+
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: azure;
 }
 
 .no-button{

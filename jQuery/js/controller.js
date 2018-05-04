@@ -2,10 +2,15 @@ import {operations,calcModel} from './model.js';
 
 const calcDisplay = {
     display(str) {
-        $('#display').text(str);
+        if(!str){
+            $('#display').html('&nbsp');
+        }else{
+            $('#display').text(str);
+        }
     },
     clear() {
-        $('#display').text('');
+        
+        $('#display').html('&nbsp');
     }
 }
 
@@ -14,16 +19,16 @@ $(document).ready(function () {
 
     let displyedNum="";
 
-    $(".button").click((event) => {
-        console.log("clicked " + $(event.currentTarget).text());
+    $(".num-button").click((event) => {
 
         displyedNum+=$(event.currentTarget).text();
         calcDisplay.display(displyedNum);
     })
 
     $(".func-button").click((event) => {
-        console.log("clicked " + $(event.currentTarget).text());
         controllerSwitch($(event.currentTarget).text(),parseInt(displyedNum));
+        let out = parseInt(calcModel._storedValue);
+        calcDisplay.display(out);
         displyedNum="";
         
     });
@@ -50,9 +55,6 @@ function controllerSwitch(controlStr,newVal) {
             break;
         case "=":
             calcModel.doLastAndUpdate(undefined,newVal);
-            let out = parseInt(calcModel._storedValue);
-            console.log(out);
-            calcDisplay.display(out);
             break;
 
     }

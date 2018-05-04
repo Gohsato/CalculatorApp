@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 module.exports = {
-    entry: './src/controller.js',
+    entry: './js/controller.js',
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'app.bundle.js'
