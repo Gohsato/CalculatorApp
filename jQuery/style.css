@@ -28,6 +28,7 @@ body{
     text-align: center;
     padding: 2em;
     max-width: 0.7em;
+    border-radius: 0.8em;
 }
 
 .no-button{
