@@ -1,7 +1,8 @@
 
 # Calculator
 To do:
-* make it look nicer
+* handle overflow
 * implment BEDMAS
-* Display operation instead of clearing display everytime
+
+https://gohsato.github.io/CalculatorApp/jQuery/
 
