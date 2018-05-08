@@ -4,5 +4,5 @@ To do:
 * handle overflow
 * implment BEDMAS
 
-https://gohsato.github.io/CalculatorApp/jQuery/
+Demo: https://gohsato.github.io/CalculatorApp/jQuery/
 
