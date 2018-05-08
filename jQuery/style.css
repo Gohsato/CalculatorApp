@@ -1,15 +1,23 @@
 body {
-    padding: 3em;
+    padding: 5%;
     font-family: 'Roboto', sans-serif;
+}
+
+#displays-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #display {
     border-style: solid;
     text-align: center;
-    padding: 0.3em;
-    max-width: 20em;
-    margin: 0.8em auto 0.8em auto;
+    min-width: 90%;
     font-size: 3em
+}
+
+#history{
+    text-align: center;
 }
 
 #button-container {
@@ -19,6 +27,11 @@ body {
     justify-content: center;
 }
 
+.no-button {
+    text-align: center;
+    padding: 2em;
+    max-width: 0.7em;
+}
 .num-button,
 .func-button {
     background-color: rgba(20, 80, 169, 0.662);
@@ -30,7 +43,7 @@ body {
     font-weight: bolder;
     font-size: 1.5em;
     color: azure;
-    
+
     -webkit-user-select: none;
     /* Chrome all / Safari all */
     -moz-user-select: none;
@@ -81,8 +94,3 @@ body {
     }
 }
 
-.no-button {
-    text-align: center;
-    padding: 2em;
-    max-width: 0.7em;
-}
