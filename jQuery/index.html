@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>jQuery Calculator</title>
-        <meta name="viewport" content="width=device-width"/>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="build/app.bundle.js"></script>
-        <link rel="stylesheet" href="style.css"/>
+<head>
+    <title>jQuery Calculator</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    </head>
-    <body>
-        <div id="display-container">
-            <h1 id="display">&nbsp</h1>
-        </div>
-        <div id="button-container">
-            <div class="func-button">clr</div>
-            <div class="no-button"></div>
-            <div class="no-button"></div>
-            <div class="func-button">/</div>
+</head>
 
-            <div class="num-button">1</div>
-            <div class="num-button">2</div>
-            <div class="num-button">3</div>
-            <div class="func-button">x</div>
+<body>
+    
+    <h4 id="history">&nbsp</h4>
+    <h1 id="display">0</h1>
+    
+    <div id="button-container">
+        <div class="func-button">ce</div>
+        <div class="func-button">c</div>
+        <div class="no-button"></div>
+        <div class="func-button">/</div>
 
-            <div class="num-button">4</div>
-            <div class="num-button">5</div>
-            <div class="num-button">6</div>
-            <div class="func-button">+</div>
+        <div class="num-button">1</div>
+        <div class="num-button">2</div>
+        <div class="num-button">3</div>
+        <div class="func-button">x</div>
 
-            <div class="num-button">7</div>
-            <div class="num-button">8</div>
-            <div class="num-button">9</div>
-            <div class="func-button">-</div>
+        <div class="num-button">4</div>
+        <div class="num-button">5</div>
+        <div class="num-button">6</div>
+        <div class="func-button">+</div>
 
-            <div class="no-button"></div>
-            <div class="num-button">0</div>
-            <div class="no-button"></div>
-            <div class="func-button">=</div>
-        </div>
-    </body>
+        <div class="num-button">7</div>
+        <div class="num-button">8</div>
+        <div class="num-button">9</div>
+        <div class="func-button">-</div>
+
+        <div class="no-button"></div>
+        <div class="num-button">0</div>
+        <div class="no-button"></div>
+        <div class="func-button">=</div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="build/app.bundle.js"></script>
+</body>
 
 
 </html>
